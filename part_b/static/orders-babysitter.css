@@ -1,0 +1,97 @@
+*{
+    background-color: cornflowerblue;
+    font-family: Arial;
+}
+.myHeader{
+    color:lavender;
+    text-align: center;
+    font-size: 60px;
+    margin: 50px;
+    font-weight: bold;
+}
+.home_Page{
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: lavender;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    width: 150px; /* set a fixed width for the element */
+}
+.home_Page:hover{
+    background-color: silver;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid black;
+}
+
+th {
+    background-color:lightblue ;
+    color: black;
+}
+
+.past_orders{
+    font-weight: bold;
+    font-size: 20px;
+}
+#rollingMessageContainer {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 1px;
+    right: 40%;
+    width: 100%;
+    height: 40px;
+    background-color: cornflowerblue;
+}
+
+#rollingMessage {
+    font-size: 30px;
+    color: white;
+    overflow: hidden;
+    animation: roll 20s linear infinite;
+}
+
+@keyframes roll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* For smaller than 600px */
+@media (max-width: 600px) {
+    .home_Page {
+        font-size: 15px;
+    }
+
+    .myHeader {
+        font-size: 36px;
+    }
+
+    th,
+    td {
+        padding: 5px;
+    }
+    #rollingMessage{
+        font-size: 20px;
+    }
+}
+
+
+
+

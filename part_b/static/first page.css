@@ -1,0 +1,115 @@
+* {
+    background-color: cornflowerblue;
+    font-family: Arial sans-serif;
+
+}
+
+#Greeting{
+    animation-name: my-animation;
+    animation-duration: 15s;
+    margin-left: 25px;
+    margin-top: 25px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.myHeader{
+    color:lavender;
+    text-align: center;
+    font-size: 60px;
+    margin: 50px;
+    font-weight: bold;
+}
+
+p{
+    text-align: center;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 1.5em;
+    -webkit-text-stroke: 1px lightgrey;
+}
+.box{
+    background-color: whitesmoke;
+    border: 2px solid #0077be;
+    border-radius: 5px;
+    color: skyblue;
+    font-size: 40px;
+    width: 70%;
+    margin: 20px auto;
+    text-align: center;
+    height: 60%;
+    animation-name: my-animation;
+    animation-duration: 15s;
+}
+@keyframes my-animation{
+    0%{
+        color: powderblue;
+    }
+    25%{
+        color: skyblue;
+    }
+    50%{
+        color: lightblue;
+    }
+    75%{
+        color: cadetblue;
+    }
+    100%{
+        color: skyblue;
+    }
+}
+/*btn*/
+#options_bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0; /* add some margin between the buttons */
+    width: 100%; /* set the width to 100% */
+    display: flex;
+    justify-content: center;
+}
+
+a.options-Button {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: lavender;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    width: 300px; /* set a fixed width for the buttons */
+    box-sizing: border-box; /* include padding in the width calculation */
+    margin-right: 10px; /*space between the buttons*/
+}
+a.options-Button:hover {
+    background-color: darkgray;
+}
+
+@media(max-width: 600px){
+    .myHeader{
+        font-size: 50px;
+    }
+   .box{
+        font-size: 15px;
+    }
+    .main-page-buttons{
+        font-size: 15px;
+    }
+}
+
+
+

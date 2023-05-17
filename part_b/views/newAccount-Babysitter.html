@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>new account babysitter</title>
+    <link rel="stylesheet" href="../static/newAccount.css">
+    <script defer src="../static/newAccount-Babysitter.js"></script>
+</head>
+
+<body>
+<div id="rollingMessageContainer">
+    <div id="rollingMessage">Baby Boom</div>
+</div>
+<h1 class="myHeader">New Account- Babysitter</h1>
+
+<form action="" class="form-NewAccount"> <!--action starts a function in JS-->
+    <div class="msg"></div> <!--msg when filling the form-->
+    <div class="form-group">
+        <label for="email"> Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email">
+    </div>
+    <div class="form-group">
+        <label for="first_name"> First Name:</label>
+        <input type="text" id="first_name" name="first name" placeholder="Enter your first name">
+    </div>
+    <div  class="form-group">
+        <label for="last_name"> Last Name:</label>
+        <input type="text" id="last_name" name="last name" placeholder="Enter your last name">
+    </div>
+    <div  class="form-group">
+        <label for="birth_date"> Date of birth:</label>
+        <input type="date" id="birth_date" name="Date Of Birth" placeholder="Enter your birth date">
+    </div>
+    <div  class="form-group">
+        <label for="phone_number"> phone number:</label>
+        <input type="number" id="phone_number" name="phone Number" placeholder="Enter your phone number">
+    </div>
+    <div  class="form-group">
+        <label for="password"> Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password">
+    </div>
+
+    <div  class="form-group">
+        <label> Gender:</label>
+
+        <ul class = "list-gender">
+            <li>
+                <input type="checkbox" id="gender-male" name="gender" value="male">
+                <label for="gender-male">Male</label>
+            </li>
+            <li>
+                <input type="checkbox" id="gender-female" name="gender" value="female">
+                <label for="gender-female">Female</label>
+            </li>
+            <li>
+                <input type="checkbox" id="gender-other" name="gender" value="other">
+                <label for="gender-other">Other</label>
+            </li>
+        </ul>
+
+    </div>
+
+    <div class="skill">
+        <label>Skills:</label>
+    </div>
+    <div class="skill">
+        <label for="skill1">Skill 1:</label>
+        <input  type="text" id="skill1" name="skill1" placeholder="Enter skill name">
+        <textarea id="skill1-text" name="skill1-text" placeholder="Enter skill description"></textarea>
+    </div>
+    <div class="skill">
+        <label for="skill2">Skill 2:</label>
+        <input type="text" id="skill2" name="skill2" placeholder="Enter skill name">
+        <textarea id="skill2-text" name="skill2-teat" placeholder="Enter skill description"></textarea>
+    </div>
+    <div class="skill">
+        <label for="skill3">Skill 3:</label>
+        <input type="text" id="skill3" name="skill3" placeholder="Enter skill name">
+        <textarea id="skill3-text" name="skill3-text" placeholder="Enter skill description"></textarea>
+    </div>
+    <div class="skill">
+        <label for="skill4">Skill 4:</label>
+        <input type="text" id="skill4" name="skill2" placeholder="Enter skill name">
+        <textarea id="skill4-text" name="skill4" placeholder="Enter skill description"></textarea>
+    </div>
+    <div class="skill">
+        <label for="skill5">Skill 5:</label>
+        <input type="text" id="skill5" name="skill5" placeholder="Enter skill name">
+        <textarea id="skill5-text" name="skill5" placeholder="Enter skill description"></textarea>
+    </div>
+    <div class="button-Container">
+        <input  type="submit"  value="submit" name="submit">
+    </div>
+
+</form>
+<!--buttons-->
+<div>
+    <ul>
+        <li><a href="../views/babysitter-HomePage.html" class="home_Page">Home Page</a></li>
+    </ul>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>create order</title>
+
+    <link rel="stylesheet" href="../static/createNewOrder.css"> <!--create a link to the html file babysitter home page-->
+    <script defer src="../static/createNewOrder.js"></script>
+
+</head>
+<body>
+<div>
+  <ul>
+    <li><a href="../views/client-HomePage.html" class="home_Page">Home Page</a></li>
+  </ul>
+</div>
+<div id="rollingMessageContainer">
+  <div id="rollingMessage">Baby Boom</div>
+</div>
+<h1 class="myHeader">Create New Order</h1>
+<form action="" class="createOrder-form">
+    <div class="msg"></div>
+    <div>
+        <label for="street">Street:</label>
+        <input type="text" id="street" name="street" class="input-box">
+    </div>
+    <div>
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" class="input-box">
+    </div>
+    <div>
+        <label for="number">Number:</label>
+        <input type="number" id="number" name="number" class="input-box">
+    </div>
+    <div>
+        <label for="start">Start</label>
+        <input type="datetime-local"  id="start" name="start" class="input-box">
+    </div>
+    <div>
+        <label for="end">End</label>
+        <input type="datetime-local"  id="end" name="end" class="input-box">
+    </div>
+    <div>
+        <label for="kids-number">Kids Number</label>
+        <input type="number" id="kids-number" name="kids-number" class="input-box">
+    </div>
+
+    <input class="button" id="submit" type="submit" value="Search">
+
+</form>
+<!--the orders list from js-->
+<ul class = "orders_list"></ul>
+
+
+
+</body>
+</html>
+
+
+

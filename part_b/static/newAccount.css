@@ -1,0 +1,188 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.myHeader{
+    color:lavender;
+    text-align: center;
+    font-size: 60px;
+    margin: 50px;
+    font-weight: bold;
+}
+body {
+    background-color:  cornflowerblue;;
+    font-family: Arial sans-serif;
+}
+#rollingMessageContainer {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 1px;
+    right: 40%;
+    width: 100%;
+    height: 40px;
+    background-color: cornflowerblue;
+}
+
+#rollingMessage {
+    font-size: 30px;
+    color: white;
+    overflow: hidden;
+    animation: roll 20s linear infinite;
+}
+@keyframes roll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.form-NewAccount {
+    background-color: white;
+    border: 1px solid floralwhite;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+.form-NewAccount label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.form-NewAccount input[type="email"],
+.form-NewAccount input[type="text"],
+.form-NewAccount input[type="date"],
+.form-NewAccount input[type="number"],
+.form-NewAccount input[type="password"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f6f6f6;
+    font-size: 18px;
+    color: #555;
+}
+
+.form-NewAccount input[type="submit"] {
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+
+.form-NewAccount input[type="submit"]:hover {
+    background-color: #444;
+}
+.error {
+    display: inline-block;
+    font-size: 20px;
+    color: white;
+    background-color: red;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 145px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.list-gender {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.list-gender label {
+    display: inline-block;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.skill {
+    margin-top: 30px;
+}
+
+.skill label {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.skill input,
+.skill textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f6f6f6;
+    font-size: 18px;
+}
+
+.home_Page{
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: lavender;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    width: 150px; /* set a fixed width for the element */
+}
+.home_Page:hover{
+    background-color: silver;
+}
+
+/* For screens smaller than 600px */
+@media (max-width: 600px) {
+    #rollingMessage{
+        font-size: 14px;
+    }
+    .myHeader{
+        font-size: 30px;
+    }
+
+    .form-NewAccount [type="submit"] {
+        font-size: 20px;
+        padding: 8px 12px;
+    }
+
+    .form-NewAccount input[type="email"], .form-NewAccount input[type="name"], .form-NewAccount input[type="date"] , .form-NewAccount input[type="number"], .form-NewAccount input[type="password"]{
+        font-size: 15px;
+    }
+
+    .skill label {
+        font-size: 15px;
+    }
+
+    .skill input,
+    .skill textarea {
+        font-size: 15px;
+    }
+    .form-NewAccount {
+        max-width: 400px;
+    }
+    .home_Page{
+        font-size: 15px;
+        width: 120px;
+    }
+}
+
+
+
+
+
