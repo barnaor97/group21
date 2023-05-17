@@ -20,7 +20,7 @@
 .myHeader{
     color:lavender;
     text-align: center;
-    font-size: 60px;
+    font-size: 80px;
     margin: 50px;
     font-weight: bold;
 }
@@ -84,9 +84,8 @@ a.options-Button {
     text-decoration: none;
     text-align: center;
     font-weight: bold;
-    font-size: 30px;
-    width: 300px; /* set a fixed width for the buttons */
-    box-sizing: border-box; /* include padding in the width calculation */
+    font-size: 40px;
+    width: 400px; /* set a fixed width for the buttons */
 
 }
 a.options-Button:hover {
@@ -127,6 +126,9 @@ a.options-Button:hover {
     }
     a.options-Button{
         font-size: 24px;
+    }
+    .image_class{
+        width: 200px;
     }
 }
 
