@@ -1,0 +1,68 @@
+Requirements
+
+3.1. module:
+1. body-parser 
+2. csvtojson 
+3. express 
+4. mysql2 
+5. pug 
+6. cookie-parser
+7. path
+
+3.2. 
+dropTables
+
+3.3.
+ `CREATE TABLE IF NOT EXISTS web.Babysitters(
+      babysitterID INT NOT NULL AUTO_INCREMENT, 
+      email VARCHAR(255) NOT NULL, 
+      full_name VARCHAR(255) NOT NULL, 
+      Date_Of_Birth datetime, 
+      phone_Number VARCHAR(10), 
+      password VARCHAR (15), 
+      gender VARCHAR (15), 
+      skill VARCHAR (300), 
+      UNIQUE KEY email (email),
+      PRIMARY KEY (babysitterID)
+    )`
+
+`CREATE TABLE IF NOT EXISTS web.Clients(
+      clientID INT NOT NULL AUTO_INCREMENT, 
+      email VARCHAR(255) NOT NULL, 
+      full_name VARCHAR(255) NOT NULL, 
+      Date_Of_Birth datetime, 
+      phone_Number VARCHAR(10), 
+      password VARCHAR (15), 
+      UNIQUE KEY email (email),
+      PRIMARY KEY (clientID)
+    )`
+
+
+ `CREATE TABLE IF NOT EXISTS web.Orders(
+      orderID INT NOT NULL AUTO_INCREMENT, 
+      clientID INT NOT NULL, 
+      babysitterID INT,
+      city VARCHAR(50),
+      street VARCHAR (50), 
+      number INT, 
+      start DATETIME, 
+      end DATETIME, 
+      kids_number INT, 
+      babysitterApproved tinyint(1),
+      PRIMARY KEY (orderID),
+      FOREIGN KEY (clientID) REFERENCES Clients(clientID)
+    );`
+
+
+ `CREATE TABLE IF NOT EXISTS web.Shifts(
+      shiftID INT NOT NULL AUTO_INCREMENT, 
+      babysitterID INT NOT NULL, 
+      start_time DATETIME, 
+      end_time DATETIME, 
+      city VARCHAR(50),
+      PRIMARY KEY (shiftID),
+      FOREIGN KEY (babysitterID) REFERENCES Babysitters(babysitterID)
+    );`
+
+
+

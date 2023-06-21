@@ -1,0 +1,45 @@
+extends default
+
+block content
+  div
+    ul.buttons_logout_home
+      li
+        a.home_Page(href='homePage') home page
+  #rollingMessageContainer
+    #rollingMessage Baby Boom
+  h1.myHeader(title='login') Login
+  form.login-form(action='/login' method='POST')
+    // action starts a function in JS
+    div
+      label Email:
+      input#email(type='email' name='email' placeholder='Enter your email...' required='')
+    div
+      label Password:
+      input#password(type='password' name='password' placeholder='Enter your password' required='')
+    div
+      input#submit(type='submit' value='SUBMIT' name='submit')
+  .line
+  // make horizontal line
+  h2 OR
+  // buttons
+  #options_bar
+    ul
+      li
+        a.options-Button(href='newAccount-Babysitter') Create babysitter account
+      li
+        a.options-Button(href='newAccount-Client') Create client account
+  .line
+  // make horizontal line
+
+  script.
+    const params = new URL(location).searchParams;
+    const error = params.get("e");
+    if (error) {
+    alert(error);
+    }
+    // clear the url after showing the alert
+    window.history.pushState(
+    {},
+    document.title,
+    window.location.pathname
+    );

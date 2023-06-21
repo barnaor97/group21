@@ -1,0 +1,31 @@
+extends default
+
+block script 
+  script(defer='' src='scripts/newShift.js')
+
+block content
+  div
+    ul.buttons_logout_home
+      li
+        a.home_Page(href='babysitterPage') home page
+      li
+        a.log_out(href='homePage') Log Out
+  #rollingMessageContainer
+    #rollingMessage Baby Boom
+  h1.myHeader Create New Shift
+  form.form-NewShift(action='')
+    // action starts a function in JS
+    .msg
+    // msg when filling the form
+    .form-group
+      label(for='city') City
+      input#city(type='text' name='city' placeholder='Enter City')
+    .form-group
+      label(for='startTime') Start Time
+      input#startTime(type='datetime-local' name='startTime' placeholder='add a start time for your shift')
+    .form-group
+      label(for='endTime') End Time
+      input#endTime(type='datetime-local' name='endTime' placeholder='add an end time for your shift')
+    .button-Container
+      input#submit(type='submit' value='submit' name='submit')
+

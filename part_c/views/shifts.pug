@@ -1,0 +1,25 @@
+extends default
+
+block script 
+  script(defer='' src='scripts/shifts.js')
+
+block content
+  #rollingMessageContainer
+    #rollingMessage Baby Boom
+  h1.myHeader Shifts
+  // buttons
+  div
+    ul.buttons_logout_home
+      li
+        a.home_Page(href='babysitterPage') home page
+      li
+        a.log_out(href='homePage') Log Out
+  table
+    thead
+      tr
+        th city
+        th start
+        th end
+        th
+    tbody
+

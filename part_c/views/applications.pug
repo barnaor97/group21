@@ -1,0 +1,28 @@
+extends default
+
+block script 
+  script(defer='' src='scripts/applications.js')
+
+block content
+  #rollingMessageContainer
+    #rollingMessage Baby Boom
+  div
+    ul.buttons_logout_home
+      li
+        a.home_Page(href='babysitterPage') home page
+      li
+        a.log_out(href='homePage') Log Out
+  h1.myHeader Applications
+  table.ordersTable
+    thead
+      tr
+        th city
+        th street
+        th number
+        th start
+        th end
+        th kids number
+        th client name
+        th client phone
+        th
+    tbody

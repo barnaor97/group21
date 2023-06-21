@@ -1,0 +1,25 @@
+extends default
+
+block content
+  div
+    ul.buttons_logout_home
+      li
+        a.log_out(href='homePage') Log Out
+  // headers
+  #rollingMessageContainer
+    #rollingMessage Baby Boom
+  h1.myHeader Babysitter Page
+  // buttons
+  #options_bar
+    ul
+      li
+        a.options-Button(href='newShift') Add new Shift
+      li
+        a.options-Button(href='shifts') Show Shifts
+      li
+        a.options-Button(href='applications') Applications
+  // images
+  .image_container
+    img.image_class(src='images/homepage image.jpeg' alt='playing together')
+    img.image_class(src='images/homePageImg.jpeg' alt='playing together with two kids')
+

@@ -1,0 +1,38 @@
+extends default
+
+block script 
+  script(defer='' src='scripts/clientSearch.js')
+
+block content
+  div
+    ul.buttons_logout_home
+      li
+        a.home_Page(href='clientPage') home page
+      li
+        a.log_out(href='homePage') Log Out
+  #rollingMessageContainer
+    #rollingMessage Baby Boom
+  h1.myHeader search results
+  .clientTimes-container
+    div
+      label.clientTime  city
+      input#city.inputTimes(type='text' name='city' disabled='')
+    div
+      label.clientTime  start time
+      input#start_time.inputTimes(type='datetime-local' name='start time' disabled='')
+    div
+      label.clientTime end time
+      input#end_time.inputTimes(type='datetime-local' name='end time' disabled='')
+  table#babysitter-table
+    thead
+      tr
+        th Name
+        th Phone
+        th Email
+        th Date Of Birth
+        th Gender
+        th Skills
+        th
+    tbody
+      // enter the body of the table
+

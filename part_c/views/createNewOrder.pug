@@ -1,0 +1,39 @@
+extends default
+
+block script 
+  script(defer='' src='scripts/createNewOrder.js')
+
+block content
+  div
+    ul.buttons_logout_home
+      li
+        a.home_Page(href='clientPage') home page
+      li
+        a.log_out(href='homePage') Log Out
+  #rollingMessageContainer
+    #rollingMessage Baby Boom
+  h1.myHeader Create New Order
+  form.createOrder-form(action='/createNewOrder' method='POST')
+    .msg
+    div
+      label(for='street') Street:
+      input#street.input-box(type='text' name='street')
+    div
+      label(for='city') City:
+      input#city.input-box(type='text' name='city')
+    div
+      label(for='number') Number:
+      input#number.input-box(type='number' name='number')
+    div
+      label(for='start') Start
+      input#start.input-box(type='datetime-local' name='start')
+    div
+      label(for='end') End
+      input#end.input-box(type='datetime-local' name='end')
+    div
+      label(for='kids_number') Kids Number
+      input#kids_number.input-box(type='number' name='kids_number')
+    input#submit.button(type='submit' value='Search')
+  // the orders list from js
+  ul.orders_list
+

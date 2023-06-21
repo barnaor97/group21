@@ -1,0 +1,554 @@
+* {
+    font-family: Arial sans-serif;
+}
+
+body {
+    display: flex;
+    flex-flow: column;
+    height: calc(100vh - 70px);
+    margin: 0;
+    padding: 66px 15px 0;
+    background-color: cornflowerblue;
+}
+#Greeting {
+    /* home page greeting */
+    animation-name: my-animation;
+    animation-duration: 15s;
+    margin-left: 25px;
+    margin-top: 45px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+footer {
+    margin-top: auto;
+    text-align: center;
+    background-color: lightgray;
+    padding: 10px;
+    margin-bottom: 16px;
+}
+.error {
+    display: inline-block;
+    font-size: 20px;
+    color: white;
+    background-color: red;
+    width: calc(100% - 20px);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 0 30px;
+}
+.myHeader {
+    color: lavender;
+    text-align: center;
+    font-size: 80px;
+    margin: 50px;
+    font-weight: bold;
+    animation-name: my-animation;
+    animation-duration: 20s;
+}
+
+.buttons_logout_home {
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home_Page,
+.log_out {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: lavender;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    width: 150px;
+}
+
+.home_Page:hover,
+.log_out:hover {
+    background-color: silver;
+}
+
+.home_Page {
+    margin-right: left;
+}
+
+.image_container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.image_class {
+    width: 300px;
+    border: 3px lightblue;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid black;
+}
+
+th {
+    background-color: lightblue;
+    color: black;
+}
+
+#rollingMessageContainer {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 16px;
+    width: 100%;
+    height: 40px;
+    right: 300px;
+    z-index: -1;
+    background-color: cornflowerblue;
+}
+
+#rollingMessage {
+    font-size: 30px;
+    color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: roll 40s linear infinite;
+}
+
+@keyframes roll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+h2 {
+    margin-top: 5px;
+    background-color: #cccccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.login-form input[type="submit"] {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: lavender;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    width: 100px; /* set a fixed width for the buttons */
+}
+
+.login-form input[type="submit"]:hover {
+    background-color: darkgray;
+}
+
+.clientTimes-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-end;
+    color: black;
+    margin-bottom: 30px;
+}
+
+.inputTime {
+    display: inline-block;
+}
+
+.clientTime {
+    margin: 0;
+    align-self: flex-start;
+}
+
+/*btn*/
+#options_bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column; /* change the direction to column */
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0; /* add some margin between the buttons */
+    width: 100%; /* set the width to 100% */
+    display: flex;
+    justify-content: center;
+}
+
+a.options-Button {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: lavender;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    width: 300px; /* set a fixed width for the buttons */
+    box-sizing: border-box; /* include padding in the width calculation */
+}
+a.options-Button:hover {
+    background-color: darkgray;
+}
+.login-form input[type="password"],
+.login-form input[type="email"] {
+    padding: 12px;
+}
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    margin-bottom: 40px;
+    gap: 10px;
+}
+
+.login-form > div {
+    display: grid;
+    grid-template-columns: 100px 200px;
+    align-items: center;
+}
+
+.login-form > div:last-of-type {
+    margin-top: 15px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form > div:last-of-type input[type="submit"] {
+    width: 100%;
+}
+
+.list-gender {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.list-gender label {
+    display: inline-block;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.form-NewShift {
+    background-color: white;
+    border: 1px solid floralwhite;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+.form-NewShift label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.form-NewShift input[type="text"],
+.form-NewShift input[type="datetime-local"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f6f6f6;
+    font-size: 18px;
+    color: #555;
+}
+
+.form-NewShift input[type="submit"] {
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+
+.form-NewShift input[type="submit"]:hover {
+    background-color: #444;
+}
+
+.createOrder-form,
+.form-NewAccount {
+    display: block;
+    position: relative;
+    background-color: white;
+    border: 1px solid floralwhite;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 0 auto 30px;
+    width: 30vw;
+}
+
+.createOrder-form label,
+.form-NewAccount label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.createOrder-form input,
+.form-NewAccount input[type="email"],
+.form-NewAccount input[type="text"],
+.form-NewAccount input[type="date"],
+.form-NewAccount input[type="number"],
+.form-NewAccount input[type="password"],
+.form-NewAccount input[type="skill"] {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f6f6f6;
+    font-size: 18px;
+    color: #555;
+}
+
+.form-NewAccount input[type="submit"] {
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+
+.form-NewAccount input[type="submit"]:hover {
+    background-color: #444;
+}
+
+.button {
+    background-color: whitesmoke;
+    color: gray;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 25px;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+.button:hover {
+    background-color: darkgray;
+}
+
+#ul_home {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.li_home {
+    margin: 10px 0; /* add margin between the buttons */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.options-home {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: lavender;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    width: 300px; /* set a fixed width for the buttons */
+    box-sizing: border-box; /* include padding in the width calculation */
+    margin-right: 10px; /*space between the buttons*/
+}
+.options-home:hover {
+    background-color: darkgray;
+}
+
+@keyframes my-animation {
+    0% {
+        color: skyblue;
+    }
+    25% {
+        color: lavender;
+    }
+    50% {
+        color: lightblue;
+    }
+    75% {
+        color: skyblue;
+    }
+    100% {
+        color: lavender;
+    }
+}
+
+#homePageBox {
+    background-color: whitesmoke;
+    border: 2px solid #0077be;
+    border-radius: 5px;
+    color: skyblue;
+    font-size: 40px;
+    width: 70%;
+    margin: 20px auto;
+    text-align: center;
+    height: fit-content;
+    animation-name: my-animation;
+    animation-duration: 15s;
+}
+
+.home_Page,
+.log_out {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: lavender;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    width: 100px;
+}
+
+.home_Page:hover,
+.log_out:hover {
+    background-color: silver;
+}
+
+.recommendations {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.recommendations p {
+    font-size: 20px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgb(240, 217, 240);
+    flex-basis: 30%; /* Adjust the width of each item as needed */
+}
+
+@media (max-width: 600px) {
+    .sideHeader {
+        font-size: 15px;
+    }
+    .myHeader {
+        font-size: 35px;
+    }
+    .image_container {
+        justify-content: center;
+    }
+    a.options-Button {
+        font-size: 24px;
+    }
+    .image_class {
+        width: 200px;
+    }
+    .home_Page,
+    .log_out {
+        font-size: 14px;
+        width: 30px;
+    }
+    th,
+    td {
+        padding: 5px;
+    }
+    #rollingMessage {
+        font-size: 20px;
+    }
+
+    .form-NewShift [type="submit"] {
+        font-size: 20px;
+        padding: 8px 12px;
+    }
+
+    .form-NewShift input[type="text"],
+    .form-NewShift input[type="datetime-local"] {
+        font-size: 15px;
+    }
+
+    .form-NewShift {
+        max-width: 400px;
+    }
+
+    .form-NewAccount [type="submit"] {
+        font-size: 20px;
+        padding: 8px 12px;
+    }
+
+    .form-NewAccount input[type="email"],
+    .form-NewAccount input[type="name"],
+    .form-NewAccount input[type="date"],
+    .form-NewAccount input[type="number"],
+    .form-NewAccount input[type="skill"],
+    .form-NewAccount input[type="password"] {
+        font-size: 15px;
+    }
+
+    .skill label {
+        font-size: 15px;
+    }
+
+    .skill input {
+        font-size: 15px;
+    }
+
+    .form-NewAccount {
+        max-width: 400px;
+    }
+    .main-page-buttons {
+        font-size: 15px;
+    }
+
+    #homePageBox {
+        font-size: 15px;
+    }
+
+    .recommendations p {
+        font-size: 15px;
+    }
+}

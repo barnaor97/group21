@@ -1,0 +1,52 @@
+extends default
+
+block script 
+  script(defer='' src='scripts/newAccount-Babysitter.js')
+
+block content
+  #rollingMessageContainer
+    #rollingMessage Baby Boom
+  h1.myHeader New Account- Babysitter
+  form.form-NewAccount(action='/CreateNewBabysitter' method='POST')
+    // action starts a function in JS
+    .msg
+    // msg when filling the form
+    .form-group
+      label(for='email')  Email:
+      input#email(type='email' name='email' placeholder='Enter your email')
+    .form-group
+      label(for='full_name') Full Name:
+      input#full_name(type='text' name='full_name' placeholder='Enter your full name')
+    .form-group
+      label(for='birth_date')  Date of birth:
+      input#birth_date(type='date' name='Date_Of_Birth' placeholder='Enter your birth date')
+    .form-group
+      label(for='phone_number')  phone number:
+      input#phone_number(type='number' name='phone_Number' placeholder='Enter your phone number')
+    .form-group
+      label(for='password')  Password:
+      input#password(type='password' name='password' placeholder='Enter your password')
+    .form-group
+      label(for='skill') Skills:
+      input#skill(type='text' name='skill' placeholder='Enter your skills')
+    .form-group
+      label  Gender:
+      ul.list-gender
+        li
+          input#gender-male(type='radio' name='gender' value='male' checked='checked')
+          label(for='gender-male') Male
+        li
+          input#gender-female(type='radio' name='gender' value='female')
+          label(for='gender-female') Female
+        li
+          input#gender-other(type='radio' name='gender' value='other')
+          label(for='gender-other') Other
+    .form-group
+      button(type='submit' onclick='return on_submit()')
+        | Submit
+  // buttons
+  div
+    ul.buttons_logout_home
+      li
+        a.log_out(href='homePage') cancel
+

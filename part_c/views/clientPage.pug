@@ -1,0 +1,21 @@
+extends default
+
+block content
+  #rollingMessageContainer
+    #rollingMessage Baby Boom
+  div
+    ul.buttons_logout_home
+      li
+        a.log_out(href='homePage') Log Out
+  h1.myHeader Client Page
+  #options_bar
+    ul
+      li
+        a.options-Button(href='createNewOrder') Create New Order
+      li
+        a.options-Button(href='ordersClient') Show Orders
+  // images:
+  .image_container
+    img.image_class(src='images/homepage image.jpeg' alt='playing together')
+    img.image_class(src='images/homePageImg.jpeg' alt='playing together with two kids')
+

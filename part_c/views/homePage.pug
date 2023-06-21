@@ -1,0 +1,40 @@
+extends default
+
+block content
+  #rollingMessageContainer
+    #rollingMessage Baby Boom
+  h1.myHeader(title='project website') Baby Boom
+  p#homePageBox
+    | Looking for a babysitter?
+    br
+    // about us- first page
+    | Want to work as a babysitter?
+    br
+    |             GOOD!
+    br
+    |             In our website you can search and order a babysitter or sign to work
+    |             as a babysitter! 
+    br
+    |             How?
+    br
+    |             Create an account or login, 
+    br
+    |             fill your details and you are ready to go!
+  // buttons:
+  #options_bar
+    ul#ul_home
+      li.li_home
+        a.options-home(href='login') login
+      li.li_home
+        a.options-home(href='newAccount-Client') new- client
+      li.li_home
+        a.options-home(href='newAccount-Babysitter') new- babysitter
+  .recommendations
+    p
+      | The Best Website to Find Babysitters! Helped me for so long!
+      | thank you.
+    p This website saved me so many times, you should use it too.
+    p
+      | This website helped me find the perfect babysitter for my kids.
+      | Reliable and trustworthy!
+
