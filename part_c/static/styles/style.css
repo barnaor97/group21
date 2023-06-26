@@ -328,7 +328,7 @@ a.options-Button:hover {
 .form-NewAccount input[type="email"],
 .form-NewAccount input[type="text"],
 .form-NewAccount input[type="date"],
-.form-NewAccount input[type="number"],
+.form-NewAccount input[type="tel"],
 .form-NewAccount input[type="password"],
 .form-NewAccount input[type="skill"] {
     display: block;
@@ -523,7 +523,7 @@ a.options-Button:hover {
     .form-NewAccount input[type="email"],
     .form-NewAccount input[type="name"],
     .form-NewAccount input[type="date"],
-    .form-NewAccount input[type="number"],
+    .form-NewAccount input[type="tel"],
     .form-NewAccount input[type="skill"],
     .form-NewAccount input[type="password"] {
         font-size: 15px;
