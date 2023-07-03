@@ -39,8 +39,6 @@ const on_submit = (e) => {
         msg.classList.add("error");
         return;
     } else if (!validateDate(dob.value)) {
-        // msg.innerHTML = "Please enter a valid date of birth";
-        // msg.classList.add("error");
         return;
     }
 

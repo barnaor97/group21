@@ -86,13 +86,15 @@ const on_submit = (e) => {
                 } else if (res) {
                     window.location = "login";
                 }
+                
             })
             .catch((err) => {
                 console.log(err);
                 msg.innerHTML = err.message;
                 msg.classList.add("error");
             });
-    }
+    
+        }
 };
 
 form.addEventListener("submit", on_submit);
