@@ -1,12 +1,12 @@
 extends default
 block header 
   h1.myHeader(title='login') Login
-block content
+block nav  
   div
     ul.buttons_logout_home
       li
-        a.home_Page(href='homePage') home page
-
+        a.home_Page(href='homePage') home page 
+block content
   form.login-form(action='/login' method='POST')
     // action starts a function in JS
     div

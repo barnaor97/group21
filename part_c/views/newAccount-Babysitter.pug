@@ -4,6 +4,11 @@ block script
   script(defer='' src='scripts/newAccount-Babysitter.js')
 block header 
   h1.myHeader New Account- Babysitter
+block nav
+  div
+    ul.buttons_logout_home
+      li
+        a.log_out(href='homePage') BACK  
 block content
   
   form.form-NewAccount(action='/CreateNewBabysitter' method='POST')
@@ -43,9 +48,5 @@ block content
     .form-group
       button(type='submit' onclick='return on_submit()')
         | Submit
-  // buttons
-  div
-    ul.buttons_logout_home
-      li
-        a.log_out(href='homePage') BACK
+
 

@@ -461,7 +461,7 @@ const dropTableBabysitters = (req, res) => {
             return;
         }
         console.log("table Babysitters dropped");
-        res.send("table dropped");
+       
         return;
     });
 };
@@ -475,7 +475,7 @@ const dropTableClients = (req, res) => {
             return;
         }
         console.log("table Clients dropped");
-        res.send("table Clients dropped");
+        
         return;
     });
 };
@@ -489,7 +489,7 @@ const dropTableOrders = (req, res) => {
             return;
         }
         console.log("table Orders dropped");
-        res.send("table Orders dropped");
+        
         return;
     });
 };
@@ -503,7 +503,7 @@ const dropTableShifts = (req, res) => {
             return;
         }
         console.log("table shifts dropped");
-        res.send("table shifts dropped");
+        
         return;
     });
 };

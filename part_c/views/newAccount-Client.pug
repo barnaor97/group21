@@ -2,11 +2,15 @@ extends default
 
 block script 
   script(defer='' src='scripts/newAccount-Client.js')
-
-block content
-  #rollingMessageContainer
-    #rollingMessage Baby Boom
+block header 
   h1.myHeader New Account- Client
+block nav 
+  div
+    ul.buttons_logout_home
+      li
+        a.log_out(href='homePage') BACK
+block content
+  
   form.form-NewAccount(action='')
     // action starts a function in JS
     .msg
@@ -27,9 +31,6 @@ block content
       input#password(type='password' name='password' placeholder='Enter your password')
     .button-Container
       input#submit(type='submit' value='submit' name='submit')
-  // buttons
-  div
-    ul.buttons_logout_home
-      li
-        a.log_out(href='homePage') BACK
+ 
+
 

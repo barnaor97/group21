@@ -2,18 +2,18 @@ extends default
 
 block script 
   script(defer='' src='scripts/shifts.js')
-
-block content
-  #rollingMessageContainer
-    #rollingMessage Baby Boom
+block header
   h1.myHeader Shifts
-  // buttons
+block nav 
   div
     ul.buttons_logout_home
       li
         a.home_Page(href='babysitterPage') home page
       li
         a.log_out(href='homePage') Log Out
+
+block content
+ 
   table
     thead
       tr

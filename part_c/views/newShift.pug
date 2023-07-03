@@ -2,17 +2,18 @@ extends default
 
 block script 
   script(defer='' src='scripts/newShift.js')
+block header 
+  h1.myHeader Create New Shift
 
-block content
+block nav 
   div
     ul.buttons_logout_home
       li
         a.home_Page(href='babysitterPage') home page
       li
         a.log_out(href='homePage') Log Out
-  #rollingMessageContainer
-    #rollingMessage Baby Boom
-  h1.myHeader Create New Shift
+          
+block content
   form.form-NewShift(action='')
     // action starts a function in JS
     .msg

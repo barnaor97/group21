@@ -2,17 +2,17 @@ extends default
 
 block script 
   script(defer='' src='scripts/ordersClient.js')
-
-block content
+block header 
+  h1.myHeader Orders Client
+block nav 
   div
     ul.buttons_logout_home
       li
         a.home_Page(href='clientPage') home page
       li
         a.log_out(href='homePage') Log Out
-  #rollingMessageContainer
-    #rollingMessage Baby Boom
-  h1.myHeader Orders Client
+block content
+
   table
     thead
       tr

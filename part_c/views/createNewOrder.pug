@@ -5,7 +5,7 @@ block script
 
 block header 
   h1.myHeader Create New Order
-block content
+block nav 
   div
     ul.buttons_logout_home
       li
@@ -13,6 +13,8 @@ block content
       li
         a.log_out(href='homePage') Log Out
   
+block content
+
   form.createOrder-form(action='/createNewOrder' method='POST')
     .msg
     div
