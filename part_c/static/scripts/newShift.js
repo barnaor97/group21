@@ -15,7 +15,7 @@ const on_submit = (e) => {
         msg.innerHTML = "Please enter start and end time";
         msg.classList.add("error");
     } else if (!validateDate(start.value, end.value)) {
-        msg.innerHTML = "Please enter valids times";
+        msg.innerHTML = "Please enter valid times";
         msg.classList.add("error");
     } else {
         const loggedInUserCookie = getCookie("loggedInUser");
@@ -55,7 +55,7 @@ function validateDate(start, end) {
         return false;
     } else if (s.getDate() > e.getDate()) {
         return false;
-    } else if (s.getDate() === e.getDate() && s.getHours() >= e.getHours()) {
+    } else if (s.getDate() === e.getDate() && s.getHours() > e.getHours() && s.getMinutes() > e.getMinutes()) {
         return false;
     }
 
