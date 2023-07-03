@@ -15,7 +15,7 @@ body {
     animation-name: my-animation;
     animation-duration: 15s;
     margin-left: 25px;
-    margin-top: 45px;
+    margin-top: 25px;
     color: white;
     font-size: 30px;
     font-weight: bold;
@@ -42,7 +42,7 @@ footer {
     color: lavender;
     text-align: center;
     font-size: 80px;
-    margin: 50px;
+    margin: 5px 20px 20px 20px;
     font-weight: bold;
     animation-name: my-animation;
     animation-duration: 20s;
@@ -550,5 +550,8 @@ a.options-Button:hover {
 
     .recommendations p {
         font-size: 15px;
+    }
+    #Greeting{
+        font-size: 12px;
     }
 }
