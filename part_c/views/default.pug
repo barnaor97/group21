@@ -9,8 +9,10 @@ html
         script(defer='' src='scripts/greeting.js')
         block script
     body
-        #Greeting
-        // greeting change by time
+        block header
+        #Greeting // greeting change by time
+        #rollingMessageContainer
+            #rollingMessage Baby Boom
         block content
 
         footer

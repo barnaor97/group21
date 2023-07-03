@@ -3,16 +3,18 @@ extends default
 block script 
   script(defer='' src='scripts/applications.js')
 
+block header 
+  h1.myHeader Applications
 block content
-  #rollingMessageContainer
-    #rollingMessage Baby Boom
+  
   div
     ul.buttons_logout_home
       li
         a.home_Page(href='babysitterPage') home page
       li
         a.log_out(href='homePage') Log Out
-  h1.myHeader Applications
+        
+  
   table.ordersTable
     thead
       tr

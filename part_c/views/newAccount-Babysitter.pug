@@ -2,11 +2,10 @@ extends default
 
 block script 
   script(defer='' src='scripts/newAccount-Babysitter.js')
-
-block content
-  #rollingMessageContainer
-    #rollingMessage Baby Boom
+block header 
   h1.myHeader New Account- Babysitter
+block content
+  
   form.form-NewAccount(action='/CreateNewBabysitter' method='POST')
     // action starts a function in JS
     .msg

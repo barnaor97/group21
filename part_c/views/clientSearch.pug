@@ -3,6 +3,8 @@ extends default
 block script 
   script(defer='' src='scripts/clientSearch.js')
 
+block header
+  h1.myHeader search results
 block content
   div
     ul.buttons_logout_home
@@ -10,9 +12,7 @@ block content
         a.home_Page(href='clientPage') home page
       li
         a.log_out(href='homePage') Log Out
-  #rollingMessageContainer
-    #rollingMessage Baby Boom
-  h1.myHeader search results
+  
   .clientTimes-container
     div
       label.clientTime  city

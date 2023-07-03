@@ -1,13 +1,12 @@
 extends default
-
+block header 
+  h1.myHeader(title='login') Login
 block content
   div
     ul.buttons_logout_home
       li
         a.home_Page(href='homePage') home page
-  #rollingMessageContainer
-    #rollingMessage Baby Boom
-  h1.myHeader(title='login') Login
+
   form.login-form(action='/login' method='POST')
     // action starts a function in JS
     div

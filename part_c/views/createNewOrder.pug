@@ -3,6 +3,8 @@ extends default
 block script 
   script(defer='' src='scripts/createNewOrder.js')
 
+block header 
+  h1.myHeader Create New Order
 block content
   div
     ul.buttons_logout_home
@@ -10,9 +12,7 @@ block content
         a.home_Page(href='clientPage') home page
       li
         a.log_out(href='homePage') Log Out
-  #rollingMessageContainer
-    #rollingMessage Baby Boom
-  h1.myHeader Create New Order
+  
   form.createOrder-form(action='/createNewOrder' method='POST')
     .msg
     div
